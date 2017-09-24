@@ -1,0 +1,4 @@
+D:\Projekty\UseCasePointsCalculator\UseCasePointsCalculator\UseCasePointsCalculator.BusinessLogic\bin\Debug\UseCasePointsCalculator.BusinessLogic.dll
+D:\Projekty\UseCasePointsCalculator\UseCasePointsCalculator\UseCasePointsCalculator.BusinessLogic\bin\Debug\UseCasePointsCalculator.BusinessLogic.pdb
+D:\Projekty\UseCasePointsCalculator\UseCasePointsCalculator\UseCasePointsCalculator.BusinessLogic\obj\Debug\UseCasePointsCalculator.BusinessLogic.dll
+D:\Projekty\UseCasePointsCalculator\UseCasePointsCalculator\UseCasePointsCalculator.BusinessLogic\obj\Debug\UseCasePointsCalculator.BusinessLogic.pdb

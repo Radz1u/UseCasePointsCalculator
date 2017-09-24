@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEEA161F-5214-4E4A-B68E-3999BF5DEFA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UseCasePointsCalculator.BusinessLogic</RootNamespace>
+    <AssemblyName>UseCasePointsCalculator.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActorTypes\EasyActorType.cs" />
+    <Compile Include="ActorTypes\HardActorType.cs" />
+    <Compile Include="ActorTypes\MediumActorType.cs" />
+    <Compile Include="IActorType.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\AnalyticsSkillCF.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\ExpirienceCF.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\HalfTimeEmployeesPartCF.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\MethodologyKnowlegdeCF.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\ObjectOrientedTechniqueKnowledgeCF.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\ProgrammingLangComplexity.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\RequirementsStabilityCF.cs" />
+    <Compile Include="ComplexityFactors\EnviromentComplexityFactors\TeamMotivationCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\AdditionalUsersTrainingCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\ConcurrencyCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\DistributedSystemCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\EasyToInstallCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\EasyToModifyCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\EasyToUseCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\EndUserPerformanceCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\ExternalLibsDependencyCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\InternalCalculationComplexityCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\PerformanceCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\PortabilityCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\ReUsabilityCF.cs" />
+    <Compile Include="ComplexityFactors\TechnicalComplexityFactors\SpecialProtectionCF.cs" />
+    <Compile Include="IComplexityFactor.cs" />
+    <Compile Include="IUseCasePointsCalculator.cs" />
+    <Compile Include="IUseCaseType.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleUseCasePointCalculator.cs" />
+    <Compile Include="UseCase.cs" />
+    <Compile Include="UseCaseTypes\EasyUseCaseType.cs" />
+    <Compile Include="UseCaseTypes\HardUseCaseType.cs" />
+    <Compile Include="UseCaseTypes\MediumUseCaseType.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
